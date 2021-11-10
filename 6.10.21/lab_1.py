@@ -9,7 +9,3 @@ def enter_list():
         l.append(s)
         s = input()
     return l
-
-
-
-print(enter_list())
