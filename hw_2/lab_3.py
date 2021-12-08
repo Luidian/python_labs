@@ -3,12 +3,12 @@
 def fibonacci_num(n):
     sequence = [0, 1]
     if n == 1:
-        return [sequence[0]]
+        return sequence[:1]
     elif n == 2:
         return sequence
 
     for i in range(n-2):
         a = sequence[i]
-        b = sequence[i+1]
-        sequence.append(a+b)
+        b = sequence[i + 1]
+        sequence.append(a + b)
     return sequence
